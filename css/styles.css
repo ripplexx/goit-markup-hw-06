@@ -36,6 +36,7 @@ ul {
     color: #4D5AE5;
 }
 
+/*Header*/
 .header {
     display: flex;
     justify-content: flex-start;
@@ -167,10 +168,12 @@ ul {
 .contact a:hover {
     color: #404BBF;
 }
+/*Header end*/
 
 
+/*Main*/
 
-
+/*Hero*/
 .hero {
     text-align: center;
     background-color: #2E2F42;
@@ -206,6 +209,11 @@ ul {
 }
 
 
+.title-button {
+    position: relative;
+    z-index: 999;
+}
+
 
 
 .hero-title {
@@ -213,8 +221,8 @@ ul {
     text-align: center;
     margin: 0 auto;
 
-
 }
+
 
 
 
@@ -258,7 +266,10 @@ button:focus {
 
 
 }
+/*Hero end*/
 
+
+/*Features*/
 .features {
     padding: 120 px 0;
     margin: 0 auto;
@@ -267,9 +278,7 @@ button:focus {
     background-size: cover;
     max-width: 1440px;
 
-
 }
-
 
 
 .features p {
@@ -298,7 +307,10 @@ button:focus {
 
 
 }
+/*Features end*/
 
+
+/*Team*/
 .team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -344,16 +356,19 @@ button:focus {
     justify-content: center;
     max-width: 1440px;
 
-
-
-
-
 }
 
 .team-items img {
     width: 264px;
     height: 260px;
     display: block;
+
+}
+
+.team h2 ul li {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 
 }
 
@@ -366,13 +381,20 @@ button:focus {
     gap: 8px;
     padding: 10px 10px;
 
-
-
 }
 
 
+/*Our Team kısmındaki social media iconlarının hover rengi ve focus efekti*/
+.link:hover,
+link:focus {
+    background-color: #4D5AE5
+}
+
+/*Team end*/
 
 
+
+/*Portfolio*/
 .portfolio {
     padding: 120px 0;
     margin: 0;
@@ -527,10 +549,12 @@ p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*Portfolio end*/
 
 
+/*Footer*/
 
-.footer-logo {
+.footer-logo {                      /*footer tamamı*/
 
     height: 180px;
     font-size: 18px;
@@ -543,7 +567,7 @@ p {
 
 }
 
-
+/*Footer middle space Social media*/
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -559,9 +583,6 @@ p {
 
 }
 
-
-
-
 .social-title {
     font-weight: 500;
     margin-bottom: 12px;
@@ -571,10 +592,18 @@ p {
 
 }
 
+/*Social media footer hover ve focus rengi*/
+.footer-right .social-media .social-media-item a:hover,
+.footer-right .social-media .social-media-item a:focus {
+    background-color: #31D0AA;
+}
+
+
+/*Footer end*/
 
 
 
-
+/*Footer logo*/
 .footer-logo .logo {
     color: white;
     max-width: 1440px;
@@ -590,6 +619,19 @@ p {
     line-height: 1.5;
     max-width: 260px;
 }
+/*Footer logo end*/
+
+
+/*Common elements features*/
+
+.container {
+
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
 
 h1,
 h2,
@@ -614,13 +656,6 @@ ul {
 }
 
 
-.team h2 ul li {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-
-}
-
 .icon-antenna,
 .icon-clock,
 .icon-diagram,
@@ -629,13 +664,9 @@ ul {
 
 }
 
-
-
 .icons {
     display: flex;
     gap: 24px;
-
-
 }
 
 .icon-item {
@@ -651,16 +682,14 @@ ul {
 
 }
 
+
 .social-media {
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
 }
-
 
 /*Social media iconlarının tasarımı; footer ve Our Team için ortak*/
 .link {
@@ -674,54 +703,18 @@ ul {
 
 }
 
-
-
-
-/*Our Team kısmındaki social media iconlarının hover rengi ve focus efekti*/
-.link:hover,
-link:focus {
-    background-color: #4D5AE5
-}
-
-
-
-
-
 .social-media .social-media-item .icon-instagram,
 .icon-twitter,
 .icon-facebook,
 .icon-linkedin {
     width: 16px;
     height: 16px;
-
-
-
 }
 
-/*Social media footer hover ve focus rengi*/
-.footer-right .social-media .social-media-item a:hover,
-.footer-right .social-media .social-media-item a:focus {
-    background-color: #31D0AA;
-}
+/*Common elements features end*/
 
 
-
-
-.title-button {
-    position: relative;
-    z-index: 999;
-}
-
-
-.container {
-
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-}
-
-/*Subscribe bölümü ve tasarımı*/
+/* Footer-input space(subscribe) ve design*/
 .footer-input-content {
     display: flex;
     flex-direction: column;
@@ -759,25 +752,6 @@ link:focus {
 
 }
 
-
-.footer-input-btn {
-    border-radius: 4px;
-    padding: 8px 24px;
-    width: 165px;
-    align-items: center;
-    margin-left: 290px;
-    margin-top: 10px;
-    display: flex;
-    /* flex özelliği vermeden önce form kısmından dolayı - değer veremedim çünkü max yakınlık 0 olur.*/
-    margin-top: -41px;
-    gap: 16px;
-
-
-
-
-
-}
-
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
@@ -795,7 +769,27 @@ link:focus {
 }
 
 
-/*Modal Bölümü*/
+.footer-input-btn {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    align-items: center;
+    margin-left: 290px;
+    margin-top: 10px;
+    display: flex;
+    /* flex özelliği vermeden önce form kısmından dolayı - değer veremedim çünkü max yakınlık 0 olur.*/
+    margin-top: -41px;
+    gap: 16px;
+
+
+}
+
+
+/* Footer-input space(subscribe) ve design end*/
+
+
+
+/*Modal space*/
 
 .modal-window-content {
     display: none;
@@ -839,10 +833,6 @@ link:focus {
 }
 
 
-.modal-container-text {
-    margin-bottom: 16px;
-}
-
 .modal-exit-btn {
     position: absolute;
     top: 24px;
@@ -860,32 +850,17 @@ link:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-.icon-exit {
-    width: 8px;
-    height: 8px;
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: -9px;
-
+    fill: #2E2F42;
 }
 
-
-.modal-exit-btn:hover,
-.modal-exit-btn:focus {
-    fill: #404BBF;
-}
-
-
-.icon-exit {
-    fill: var(--nav-blue);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    ;
-}
-
-.modal-exit-btn:hover .icon-exit,
-.modal-exit-btn:focus .icon-exit {
-    fill: #fff;
+.modal-container-text {
+    margin-bottom: 16px;
 }
 
 .modal-container-text {
@@ -896,7 +871,6 @@ link:focus {
     text-align: center;
     color: #2e2f42;
 }
-
 
 .modal-form-content {
     margin-bottom: 8px;
@@ -919,6 +893,7 @@ link:focus {
     flex-direction: column;
 }
 
+
 .modal-input {
     border: 1px solid #4d5ae5;
     border-radius: 4px;
@@ -935,28 +910,35 @@ link:focus {
     border-color: #4D5AE5;
 }
 
-
-.modal-icon {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #2E2F42;
-}
-
-.icon-click {
-
-    width: 10px;
-    height: 8px;
-    margin-top: 186px;
-    margin-left: 11px;
-
-}
-
 .modal-input:hover+.modal-icon,
 .modal-input:focus+.modal-icon {
     fill: #4D5AE5;
+}
+
+.icon-exit {
+    width: 8px;
+    height: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: -9px;
+
+}
+
+
+.modal-exit-btn:hover,
+.modal-exit-btn:focus {
+    fill: #404BBF;
+}
+
+
+.icon-exit {
+    fill: var(--nav-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.modal-exit-btn:hover .icon-exit,
+.modal-exit-btn:focus .icon-exit {
+    fill: #fff;
 }
 
 .textarea-content {
@@ -975,25 +957,11 @@ link:focus {
     padding: 8px 16px;
 }
 
+
 .checkbox-content {
     margin-bottom: 24px;
 
 }
-
-.modal-checkbox {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    fill: transparent;
-    margin-top: 16px;
-    width: 16px;
-    height: 16px;
-    border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
 
 .visually-hidden-checkbox {
     display: block;
@@ -1010,6 +978,31 @@ link:focus {
     border: none;
     background-color: #404BBF;
     fill: #F4F4FD;
+}
+
+
+.modal-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    margin-top: 16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.icon-click {
+
+    width: 10px;
+    height: 8px;
+    margin-top: 186px;
+    margin-left: 11px;
+
 }
 
 .checkbox-text {
@@ -1039,310 +1032,41 @@ link:focus {
     margin-left: 96px;
 
 }
+/*Modal Space end*/
 
-/*Mobile Menu*/
+@media(min-width:320px) and (max-width:767px){
 
-.mobile-menu{
-     display: none; 
-}
-
-@media (min-width:768px) and(max-width:1158px){
-    address{
-        padding-left: 121px;
-        padding-top: 0;
-    }
-    address ul{
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    .features ul{
-        flex-wrap: wrap;
-        align-items:center;
-        
-    }
-    
-
-    .features .features-item{
-        flex:1 1 45%;
-    }
-
-
-    .features .features-item .icon-item{
-        display: none;
-    }
-
-
-
-    /*Our Team Section*/
-    
-    .team-ul{
-        flex-wrap: wrap;
-    }
-
-    .team .team-ul .team-items{
-        width: 45%;
-    }
-
-    /*Portfolio Section*/
-
-    .portfolio .portfolio-ul{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*Footer Section*/
-
-    .footer-logo div{
-        flex-wrap: wrap;
-        
-    }
-
-    .footer-logo .container {
-        margin-left: 108px;
-    }
-
-    .footer-logo div .logo{
-        margin-right: 24px;
-    }
-
-    .features h2 {
-        font-weight: 700;
-        font-size: 36px;
-        
-    }
-
-    .features p {
-        width: 100%;
-    }
-
-
-}
-@media(min-width:320px) and(max-width:767px){
-
-
-    .modal-window-content .modal-container{
-        width: 288px;
-        height: 623px;
-    }
-
-    address {
-        padding-left: 121px;
-        padding-top: 0;
-    }
-    
-    address ul {
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    .features ul {
-        flex-wrap: wrap;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-            
-    
-    }
-
-    .features .features-item {
-        width: 356px;
-    }
-
-    .features .features-item .icon-item {
-        display: none;
-    }
-
-    .team-ul {
-        flex-wrap: wrap;
-    }
-
-    .team .team-ul{
-        gap: 72px;
-    }
-
-    .team .team-ul .team-items {
-        width: 264px;
-        height: auto;
-    }
-
-    .portfolio .portfolio-ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer-logo div {
-        flex-wrap: wrap;
-    
-    }
-    .footer-logo div:nth-child(3) {
-        margin-bottom: 0;
-    }
-
-    .features h2 {
-        font-weight: 700;
-        font-size: 36px;
-        text-align: center;
-    
-    }
-
-    .features p {
-        width: 100%;
-    }
-    
-    .menu .menu-ul,
-    .menu .contact {
-        display: none;
-    }
-
-    .menu {
+    .menu{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /*Logo sola,toggle ve menü sağa gider.*/
         background-color: #fff;
         width: 100%;
     }
 
-    .hero h1 {
-        text-align: center;
-        letter-spacing: 0.02em;
-    }
-    
-    .hero button {
-        /*buttona class vermemişim*/
-        width: 169px;
-        height: 56px;
-        line-height: 56px;
-    }
-        
-    .container .hamburger {
-        display: block;
-        margin: 16px;
-    }
-
-    .footer-logo .footer-right {
+    .logo{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
         align-items: center;
-        margin-right: 0;
-    }
-
-
-    .footer-logo .footer-input-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-logo .footer-input-btn {
-        width: 165px;
-        height: 40px;
-    }
-    
-
-    .footer-logo .container .logo, .footer-p{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-right: 0;
-    }
-
-
-    /*Mobile menu*/
-
-    .mobile-menu{
-        
-        position: absolute;
+        justify-content: space-between;
+        background-color: #fff;
         width: 100%;
-        height: 100%;
-        top:0;
-        left: 0;
-        background-color: rgb(255,255,255);
-        padding: 16px;
     }
-
-    .mobile-menu .logo{
-        display: none;
-    }
-
-    .mobile-menu nav ul{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        row-gap: 40;
-        padding-top: 72px;
-        padding-bottom: 168px;
-    }
-
-    .mobile-menu .menu-item{
-        padding: 0;
-    }
-
-    .mobile-menu .contact{
-        padding-left: 0;
-        margin-bottom: 48px;
-    }
-
-    .is-open{
-        display: block;
-    }
-    
-    ul li a.current-studio::after{
-        height: 0;
-    }
-
-    .mobile-menu .footer-right ul{
-        display: flex;
-        gap:40px;
-    }
-
-    .mobile-menu nav ul li a{
-        font-weight: 700;
-        font-size: 36px;
-    }
-
-    .mobile-menu nav{
-        display: inline;
-    }
-    
-    .mobile-menu nav button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        top: 24px;
-        right: 24px;
-        border-radius: 50%;
-        background-color: white;
-        border: 1px solid rgba(231, 233, 252, 1);
-    }
-}
-    
-    /* .footer-logo .container{
-        display: flex;
-        justify-content: ;
-    } */
-
-
-
-
-    
-
-   
-    
-
-    
-
     
 
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
