@@ -266,6 +266,9 @@ button:focus {
 
 
 }
+
+
+
 /*Hero end*/
 
 
@@ -361,7 +364,7 @@ button:focus {
 .team-items img {
     width: 264px;
     height: 260px;
-    display: block;
+    /*display:block;*/
 
 }
 
@@ -567,6 +570,12 @@ p {
 
 }
 
+
+.footer-logo .container {
+    justify-content: flex-start;
+    margin-left:370px;
+}
+
 /*Footer middle space Social media*/
 .footer-right {
     display: flex;
@@ -588,9 +597,15 @@ p {
     margin-bottom: 12px;
     line-height: 1.5;
     font-size: 16px;
-    margin-right: 136px;
+   
 
 }
+
+.footer-logo .social-media{
+    /*buraya bak*/
+}
+
+
 
 /*Social media footer hover ve focus rengi*/
 .footer-right .social-media .social-media-item a:hover,
@@ -1034,39 +1049,458 @@ ul {
 }
 /*Modal Space end*/
 
-@media(min-width:320px) and (max-width:767px){
+.mobile-menu{
+    display: none;
+    width: 320px;
+    height: 7216px;
 
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #fff;
-        width: 100%;
-    }
-
-    .logo{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #fff;
-        width: 100%;
-    }
-    
-
-    
 }
 
+.hamburger{
+    /*display none olacak*/
+}
 
+ /* Mobil cihazlar için varsayılan stiller (320px ve üzeri) */
+ 
 
+ @media screen and (min-width: 320px) and (max-width: 767px) {
 
+     /* 320px ile 767px arasındaki ekranlar için stiller */
+     /* Örneğin: */
+     
+    
+     
+     .logo{
+        margin-right: 189px;
+        
+     }
+     
+     .container {
+         width: 100%;
+         /* Kapsayıcıyı tam genişliğe getir */
+         padding: 0 15px;
+         /* Yan boşlukları koru */
+     }
 
+     .header .container {
+         flex-direction: column;
+         /* Mobil görünümde başlık öğelerini dikey sırala */
+         padding: 15px;
+         width: 320px;
+         height: 56px;
+         
+     }
 
+     .menu {
+         margin-left: 0;
+         margin-top: 10px;
+         
+     }
 
+     .menu-ul {
+         flex-direction: column;
+         /* Menü öğelerini dikey sırala */
+         align-items: center;
+         gap: 10px;
+     }
+     
 
+     .contact {
+         flex-direction: column;
+         /* İletişim bilgilerini dikey sırala */
+         gap: 10px;
+         margin-top: 10px;
+     }
 
+     .hero {
+         padding: 100px 15px;
+         /* Mobil için daha az dolgu */
+         height: auto;
+         /*background-size: contain;/* Arka plan resmini sığdır */
+         background-position: center;
+         
+         
+         
+     }
 
+     .hero .container h1 {
+         font-size: 36px;
+         /* Mobil başlık boyutunu küçült */
+         margin-bottom: 24px;
+     }
 
+     .features .features-ul {
+         flex-direction: column;
+         /* Özellik öğelerini dikey sırala */
+         gap: 30px;
+         margin: 0;
+         text-align: center;/*features ortalandı*/
+     }
 
+     .features-item {
+         padding-bottom: 30px;
+         padding-top: 30px;
+     }
 
+     .features-item .icons{
+        display: none;/*mobilde görünmeyecek*/
+     }
 
+     .team .team-ul,
+     .portfolio-ul {
+         flex-direction: column;
+         /* Takım ve portföy öğelerini dikey sırala */
+        gap: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 
+     .team-items,
+     .portfolio-items {
+         width: 100%;
+         /* Tam genişlik */
+         max-width: none;
+     }
+     
+     .team-items{
+        width: 288px;
+        
+     }
+     
+     .team-items img{
+        
+        width: 288px;
+        
+     }
+
+     .portfolio-ul{
+        width: 288px;
+        margin-left: 55px;
+     }
+
+     .portfolio-items{
+        width: 288px;
+        height: 360px;
+        margin-right: 16px;
+        
+     }
+
+     .footer-logo .container,
+     .footer-right,
+     .footer-input-content {
+         align-items: center;
+         /* Alt bilgi öğelerini ortala */
+         text-align: center;
+         margin-left: 0;
+         margin-right: 0;
+         margin-top: 20px;
+         margin-bottom: 20px;
+     }
+
+     .footer-logo .logo{
+        margin-left: 130px;
+        margin-top: 96px;
+     }
+
+     .footer-logo p{
+        margin-left: 60px;
+     }
+
+     .social-title{
+        margin-right:70px;
+     }
+
+     .footer-input-form {
+         width: 288px;
+         height: 40px;
+
+     }
+     
+     
+
+     .footer-input {
+         width: 288px;
+         
+
+     }
+
+     .footer-input-text{
+        margin-right: 70px;
+     }
+
+     .footer-input-btn {
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 20px;
+         
+     }
+
+    .footer-div {
+        width: 414px;
+        height: 664px;
+        background-color: #2E2F42;
+    }
+
+     .footer-right{
+        background-color: #2E2F42;
+        background-size: contain;
+        padding: 0;
+        margin-top: 120px;
+
+        
+     }
+
+     .footer-input-content{
+        background-color: #2E2F42;
+        background-size:contain ;
+        padding: 0;
+        margin-top: 110px
+        
+        
+     }
+
+     
+
+     .modal-container {
+         width: 90%;
+         /* Mobil modal genişliği */
+         height: auto;
+         max-height: 90vh;
+         /* Maksimum yükseklik */
+         overflow-y: auto;
+         /* Dikey kaydırma çubuğu gerekiyorsa */
+     }
+
+     .modal-input {
+         width: 100%;
+     }
+
+ }
+
+ /* Tablet ve daha büyük cihazlar için stiller (768px ve üzeri) */
+ @media screen and (min-width: 768px) and (max-width: 1157px) {
+     .container {
+         width: 768px;
+         /* Tablet konteyner genişliği */
+     }
+
+     .header .container {
+         flex-direction: row;
+         /* Başlık öğelerini yatayda sırala */
+         justify-content: space-between;
+     }
+
+     .menu {
+         margin-left: 0;
+         /* Menü kenar boşluğunu ayarla */
+         flex: none;
+     }
+
+     .menu-ul {
+         flex-direction: row;
+         /* Menü öğelerini yatay sırala */
+         gap: 30px;
+     }
+
+     .contact {
+         gap: 20px;
+         /* İletişim bilgilerini yatayda sırala */
+     }
+
+     .hero {
+         padding: 150px 0;
+         /* Tablet için dolgu */
+     }
+
+     .hero .container h1 {
+         font-size: 48px;
+         /* Tablet başlık boyutu */
+     }
+
+     .features .features-ul {
+         flex-direction: row;
+         /* Özellik öğelerini yatayda sırala */
+         flex-wrap: wrap;
+         /* Bir sonraki satıra geçmelerine izin ver */
+         justify-content: center;
+     }
+
+     .features-item {
+         width: calc(50% - 12px);
+         /* İki sütun düzeni */
+     }
+
+     .features-item p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+     }
+
+     .team .team-ul {
+         flex-direction: row;
+         /* Takım öğelerini yatayda sırala */
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .team-items {
+         width: calc(50% - 12px);
+         /* İki sütun düzeni */
+     }
+
+     .portfolio-ul {
+         flex-direction: row;
+         /* Portföy öğelerini yatayda sırala */
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+
+     .portfolio-items {
+         width: calc(50% - 12px);
+         /* İki sütun düzeni */
+     }
+
+     .footer-logo,
+     .footer-right,
+     .footer-input-content {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         /* Alt bilgi öğelerini sola hizala */
+         text-align: left;
+     }
+
+     .footer-logo .container {
+         align-items: flex-start;
+     }
+
+     .footer-logo {
+         height: auto;
+         padding: 72px 0;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         align-items: flex-start;
+     }
+
+     .footer-input-content {
+         margin-left: 0;
+         margin-right: 0;
+         margin-top: 0;
+     }
+
+     .footer-input-text {
+         margin-right: 0;
+         margin-left: 0;
+     }
+
+     .footer-input-btn {
+         margin-left: 0;
+         margin-top: 10px;
+     }
+
+ }
+
+ /* Masaüstü ve daha büyük cihazlar için stiller (1158px ve üzeri) */
+ @media screen and (min-width: 1158px) {
+     .container {
+         width: 1158px;
+         /* Masaüstü konteyner genişliği */
+     }
+
+     .header .container {
+         justify-content: space-between;
+     }
+
+     .menu {
+         margin-left: 56px;
+         /* Orijinal masaüstü kenar boşluğu */
+     }
+
+     .menu-ul {
+         gap: 40px;
+         /* Orijinal menü boşluğu */
+     }
+
+     .contact {
+         gap: 36px;
+         /* Orijinal iletişim boşluğu */
+     }
+
+     .hero {
+         padding: 188px;
+         /* Orijinal masaüstü dolgusu */
+     }
+
+     .hero .container h1 {
+         font-size: 56px;
+         /* Orijinal masaüstü başlık boyutu */
+     }
+
+     .features .features-ul {
+         flex-direction: row;
+         /* Özellik öğelerini yatayda sırala */
+         justify-content: flex-start;
+     }
+
+     .features-item {
+         width: auto;
+         /* Genişliği otomatik ayarla */
+     }
+
+     .team .team-ul {
+         flex-direction: row;
+         /* Takım öğelerini yatayda sırala */
+     }
+
+     .portfolio-ul {
+         flex-direction: row;
+         /* Portföy öğelerini yatayda sırala */
+     }
+
+     .footer-logo {
+         height: 180px;
+         padding-top: 36px;
+         padding-bottom: 36px;
+         display: flex;
+         justify-content: space-between;
+         /* Alt bilgi öğelerini yatayda dağıt */
+         align-items: flex-start;
+     }
+
+     .footer-right {
+         margin-left: 120px;
+         /* Kenar boşluklarını ayarla */
+         margin-top: 0;
+         margin-right: 0;
+         align-items: flex-start;
+         text-align: left;
+     }
+
+     .social-title {
+         margin-right: 0;
+     }
+
+     .footer-input-content {
+         margin-left: 80px;
+         /* Kenar boşluklarını ayarla */
+         margin-top: 0;
+         margin-right: 0;
+         align-items: flex-start;
+         text-align: left;
+     }
+
+     .footer-input-text {
+         margin-right: 0;
+         margin-left: 0;
+     }
+
+     .footer-input-btn {
+         margin-left: 290px;
+         /* Orijinal konumlandırma */
+         margin-top: -41px;
+     }
+ }
