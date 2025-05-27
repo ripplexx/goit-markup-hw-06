@@ -548,6 +548,11 @@ footer button .icons-svg {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-window-content.is-open{
+     
+      
+}
+
 .modal-window-content .modal-container {
     position: absolute;
     top: 50%;
@@ -791,9 +796,12 @@ input[type="checkbox"] {
 }
 
 @media (min-width:768px) and (max-width:1158px) {
+    
+    
     .contact {
         padding-left: 121px;
         padding-top: 0;
+        justify-content: right;
 
     }
 
@@ -1045,9 +1053,7 @@ input[type="checkbox"] {
         gap: 24px;
     }
 
-    .is-open {
-        display: block;
-    }
+    
 
     ul li a.current-studio::after {
         height: 0;
