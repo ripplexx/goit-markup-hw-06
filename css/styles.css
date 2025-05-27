@@ -228,6 +228,7 @@ p {
     position: absolute;
     left: 0;
     bottom: -16px;
+    display: flex;
 
 }
 
@@ -265,11 +266,14 @@ ul li a {
 .contact ul {
     display: flex;
     gap: 40px;
+    
 }
 
 .contact li {
     list-style-type: none;
 }
+
+
 
 .menu ul li,
 .contact ul li {
@@ -810,7 +814,20 @@ input[type="checkbox"] {
     .contact ul {
         flex-direction: column;
         gap: 12px;
-        justify-content: center;
+        justify-content:flex-end;
+    }
+
+    
+    .current-studio::after{
+        width: 100%;
+        border-radius: 2px;
+        background-color: #404BBF;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -22px;
+        display: flex;
+        
     }
 
     .features ul {
